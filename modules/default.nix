@@ -12,6 +12,9 @@
     ./startup.nix
     ./statusline.nix
     ./surround.nix
+    ./telescope.nix
     ./theme.nix
+    ./treefile.nix
+    ./treesitter.nix
   ];
 }

@@ -50,6 +50,41 @@
       url = github:catppuccin/nvim;
       flake = false;
     };
+
+    telescope = {
+      url = github:nvim-telescope/telescope.nvim;
+      flake = false;
+    };
+
+    nvim-tree-lua = {
+      url = github:nvim-tree/nvim-tree.lua;
+      flake = false;
+    };
+
+    nvim-web-devicons = {
+      url = github:nvim-tree/nvim-web-devicons;
+      flake = false;
+    };
+
+    nvim-treesitter = {
+      url = github:nvim-treesitter/nvim-treesitter;
+      flake = false;
+    };
+
+    nvim-ts-rainbow = {
+      url = github:p00f/nvim-ts-rainbow;
+      flake = false;
+    };
+
+    nvim-ts-autotag = {
+      url = github:windwp/nvim-ts-autotag;
+      flake = false;
+    };
+
+    nvim-treesitter-context = {
+      url = github:lewis6991/nvim-treesitter-context;
+      flake = false;
+    };
   };
 
   outputs = { nixpkgs, flake-utils, self, ... }@inputs:
@@ -77,7 +112,10 @@
           startup.enable = true;
           statusline.enable = true;
           surround.enable = true;
+          telescope.enable = true;
           theme.enable = true;
+          treefile.enable = true;
+          treesitter.enable = true;
         };
       in
       rec {
